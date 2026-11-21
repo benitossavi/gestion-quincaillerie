@@ -1,0 +1,54 @@
+/* Site public GestionQuincaillerie (GitHub Pages) */
+:root {
+    --primaire: #b45309;
+    --primaire-fonce: #78350f;
+    --entete: #292524;
+    --fond: #faf7f2;
+    --carte: #ffffff;
+    --tuile: #fdf6ef;
+    --texte: #1c1917;
+    --discret: #57534e;
+    --bordure: #e7e5e4;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--texte);
+    font: 16px/1.65 "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+a { color: var(--primaire); }
+a:hover { color: var(--primaire-fonce); }
+
+header { background: var(--entete); border-bottom: 4px solid var(--primaire); }
+header .bloc {
+    max-width: 880px; margin: 0 auto; padding: 14px 16px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+header a { color: #fff; text-decoration: none; }
+header .marque { font-weight: 700; font-size: 1.05rem; }
+header .marque span { color: #fbbf24; }
+header nav { display: flex; gap: 18px; flex-wrap: wrap; }
+header nav a { opacity: .9; }
+header nav a:hover { opacity: 1; color: #fbbf24; }
+
+main { max-width: 880px; margin: 0 auto; padding: 28px 16px 8px; }
+.carte {
+    background: var(--carte); border: 1px solid var(--bordure); border-radius: 12px;
+    padding: 28px 24px; margin-bottom: 22px;
+}
+h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.25; margin: 0 0 16px; color: var(--entete); }
+h2 { font-size: 1.2rem; margin: 26px 0 8px; color: var(--entete); }
+.carte > h2:first-child { margin-top: 0; }
+.accroche { font-size: 1.05rem; color: var(--discret); margin-top: 0; }
+.maj { color: var(--discret); font-size: .9rem; margin-top: -8px; }
+
+.grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin-top: 20px; }
+.grille > div { background: var(--tuile); border-radius: 10px; padding: 14px 16px; border-left: 4px solid var(--primaire); }
+.grille b { color: var(--entete); }
+
+ul { padding-left: 1.3rem; }
+li { margin-bottom: 6px; }
+
+footer { text-align: center; color: var(--discret); font-size: .9rem; padding: 10px 16px 32px; }
