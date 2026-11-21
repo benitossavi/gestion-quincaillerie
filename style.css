@@ -27,7 +27,8 @@ header .bloc {
     display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
 }
 header a { color: #fff; text-decoration: none; }
-header .marque { font-weight: 700; font-size: 1.05rem; }
+header .marque { font-weight: 700; font-size: 1.05rem; display: inline-flex; align-items: center; }
+header .marque img { width: 32px; height: 32px; border-radius: 7px; margin-right: 10px; }
 header .marque span { color: #fbbf24; }
 header nav { display: flex; gap: 18px; flex-wrap: wrap; }
 header nav a { opacity: .9; }
